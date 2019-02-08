@@ -2,7 +2,25 @@
 ---
 This guide applies only for Single Page Application (SPA)
 
-### Size optimization (Network)
+### UX optimization (related to user psychology)
+1. Show loading
+
+1. Add placeholders
+
+1. Use AppShell [link](https://github.com/mgechev/angular-performance-checklist#use-application-shell) 
+    - [Google Instant Loading Web Apps with an Application Shell Architecture](https://developers.google.com/web/updates/2015/11/app-shell)
+
+1. Use event capturing and reproduce events after load
+
+1. Load script while user fills fields or read some information
+
+### Browser optimization 
+
+1. (Critical Path and Render Blocking Resources (CSS + JS))[https://www.keycdn.com/blog/website-performance-optimization#4-critical-path-and-render-blocking-resources-css-js]
+
+1. No more then 7 connections to the server in the same time.
+
+### Network (size optimization)
 1. Reduce HTTP Requests
     - Inline js, html, json
 
@@ -40,27 +58,9 @@ This guide applies only for Single Page Application (SPA)
         * [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
         
 1. Analyse files
-    
+    - web pack bundle anyliser
 
-### Browser optimization 
-
-1. (Critical Path and Render Blocking Resources (CSS + JS))[https://www.keycdn.com/blog/website-performance-optimization#4-critical-path-and-render-blocking-resources-css-js]
-
-1. No more then 7 connections to the server in the same time.
-
-### UX optimization (related to user psychology)
-1. Show loading
-
-1. Add placeholders
-
-1. Use AppShell [link](https://github.com/mgechev/angular-performance-checklist#use-application-shell) 
-    - [Google Instant Loading Web Apps with an Application Shell Architecture](https://developers.google.com/web/updates/2015/11/app-shell)
-
-1. Use event capturing and reproduce events after load
-
-1. Load script while user fills fields or read some information
-
-### Performance optimization
+### Optional. Performance optimization depends on application.
 
 1. Delivery only what is needed
     - Reduce first bundle
