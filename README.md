@@ -54,6 +54,7 @@ This guide applies only for Single Page Application (SPA)
     - webp (???)
     - Images alternative text with size `<img alt='' width='' height='' />`
     - Save with optimization (???) photoshop save as
+    - Desktop app for Windows [FileOptimizer](https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer)
 
 1. Gzip one file VS. many Gzip + many bundles
     - [brotli](https://github.com/google/brotli)
